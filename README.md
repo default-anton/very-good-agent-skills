@@ -1,6 +1,8 @@
 # very-good-agent-skills
 
-Small, reusable agent skills you can copy into local skill directories.
+These skills are mine. I like them, and maybe you will too.
+
+This repo is a small pile of reusable agent skills I keep around because they make the work better. They are short and practical.
 
 ## Included
 
@@ -9,7 +11,7 @@ Small, reusable agent skills you can copy into local skill directories.
 
 ## Install
 
-Copy a skill directory into your tool's skills directory.
+Copy the skill directory you want into your tool's skills directory.
 
 Example:
 
