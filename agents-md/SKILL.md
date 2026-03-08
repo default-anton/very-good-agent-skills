@@ -1,47 +1,44 @@
 ---
 name: agents-md
 description: >
-  Use before creating or editing any `AGENTS.md`. Keeps project-level agent
-  guidance terse and operational; covers placement, content, and what belongs
-  elsewhere.
+  Use before creating or editing any `AGENTS.md`. Defines what belongs there,
+  how to keep it root-scoped, and how to keep agent guidance project-specific,
+  actionable, and terse.
 ---
 
-Use before any create/edit/move/split of `AGENTS.md`.
+Use before any create/edit of `AGENTS.md`.
 
-## Placement
+## Mental Model
 
-- Put a rule in `AGENTS.md` only if it matters for most project work. If it is irrelevant for >30% of project work, do not put it in `AGENTS.md`.
-- Use the project-level `AGENTS.md` for repo-wide defaults, safety rules, shared invariants, key paths, core principles, non-obvious maintenance rules, project gotchas, and escalation points.
-- When `AGENTS.md` gets too large, move detail into `docs/*` or other agent-facing docs and leave a short pointer behind.
+Write for a day-one principal engineer: setup done, first real task starting.
 
-## Write It Like Ops
+`AGENTS.md` is the first file they read. It must give enough project-specific guidance to finish that task without hidden repo mistakes or predictable review comments. If a line would not change first-task behavior, cut it.
 
-- Write operator instructions, not a README.
-- Use short headings, imperative bullets, exact paths, and concrete commands.
-- Optimize for scan speed: dense, specific, no filler.
-- Keep it token-light: every line must earn its cost.
-- State defaults, constraints, and decision rules. Explain why only when it prevents misuse.
-- Prefer durable rules over task-specific notes.
+## Must Cover
 
-## Keep / Cut
+- Where to start: source-of-truth paths, relevant subtrees, and deeper docs worth opening next.
+- What can go wrong: forbidden actions, risky commands, confirmations, stop conditions.
+- What "done" means: mandatory tests, checks, or review steps before claiming completion.
+- How this repo differs from defaults: ownership boundaries, invariants, non-obvious conventions, workflow traps.
+- Where to go deeper: short pointers for real but less-common domains.
 
-Keep:
-- required checks, forbidden commands/actions, and stop conditions
-- source-of-truth paths and ownership boundaries
-- workflow invariants, concurrency constraints, and repo-specific gotchas
-- links to deeper docs when detail is needed
+## Writing Rules
 
-Cut:
-- generic coding advice the model already knows
-- standard framework or language conventions unless this repo intentionally deviates
-- temporary task notes, TODO dumps, historical rationale
-- duplicated rules that already live in a better source
-- secrets, credentials, or private data
+- Write instructions, not explanations.
+- Keep it tight: token-light, high-signal, and worth reading first.
+- Prefer imperative bullets, exact paths, concrete commands, explicit decision rules.
+- Cut generic engineering advice, framework basics, temporary notes, duplicates.
+- State defaults, ask points, and no-touch zones.
+- Remove stale or conflicting guidance in the same edit.
 
-## Hygiene
+## Quality Check
 
-- State each rule once. Link instead of repeating.
-- When touching an `AGENTS.md`, remove stale or contradictory text in the same pass.
-- If a repo needs more detail, extract it into existing agent-facing docs, keep `AGENTS.md` as the routing layer, and add a pointer in the same change.
+Before finishing, verify a strong new engineer could answer:
+- What do I read next?
+- What must I run before I say "done"?
+- What would cause damage or review comments?
+- What repo-specific rule would I otherwise miss?
 
-If you changed `AGENTS.md`, summarize what changed and why this scope is correct.
+If any answer is missing, the file is not done.
+
+If you changed `AGENTS.md`, summarize what changed and why this scope fits the first-task mental model.
