@@ -6,6 +6,7 @@ This repo is a small pile of reusable agent skills I keep around because they ma
 
 ## Included
 
+- `agent-readiness`: assess how ready a repo is for AI coding agents
 - `agents-md`: rules for creating and editing `AGENTS.md`
 - `create-cli`: design command-line interface parameters and UX
 - `git-commit`: workflow and constraints for creating git commits

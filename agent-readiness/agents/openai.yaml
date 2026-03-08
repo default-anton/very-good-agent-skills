@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Readiness"
+  short_description: "Assess repo readiness for AI coding agents"
+  default_prompt: "Use $agent-readiness to assess this repository and give a tight, evidence-backed readiness report with prioritized recommendations."
