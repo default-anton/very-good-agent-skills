@@ -7,6 +7,7 @@ This repo is a small pile of reusable agent skills I keep around because they ma
 ## Included
 
 - `agents-md`: rules for creating and editing `AGENTS.md`
+- `create-cli`: design command-line interface parameters and UX
 - `git-commit`: workflow and constraints for creating git commits
 
 ## Install
