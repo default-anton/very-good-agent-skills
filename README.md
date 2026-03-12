@@ -11,11 +11,15 @@ This repo is a small pile of reusable agent skills I keep around because they ma
 - `create-cli`: design command-line interface parameters and UX
 - `git-commit`: workflow and constraints for creating git commits
 
-## Install
+## Installation
 
-Copy the skill directory you want into your tool's skills directory.
+For pi users:
 
-Example:
+```bash
+pi install git:github.com/default-anton/very-good-agent-skills
+```
+
+Otherwise, copy the skill directory you want into your tool's skills directory:
 
 ```bash
 curl -L https://codeload.github.com/default-anton/very-good-agent-skills/tar.gz/refs/heads/main \

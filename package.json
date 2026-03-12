@@ -1,0 +1,39 @@
+{
+  "name": "@default-anton/very-good-agent-skills",
+  "version": "0.1.0",
+  "description": "Reusable pi skills for agent readiness, AGENTS.md authoring, CLI design, and git commits.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/default-anton/very-good-agent-skills.git"
+  },
+  "homepage": "https://github.com/default-anton/very-good-agent-skills#readme",
+  "bugs": {
+    "url": "https://github.com/default-anton/very-good-agent-skills/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-skill",
+    "skills",
+    "agents"
+  ],
+  "files": [
+    "README.md",
+    "LICENSE",
+    "agent-readiness",
+    "agents-md",
+    "create-cli",
+    "git-commit"
+  ],
+  "scripts": {
+    "check": "npm pack --dry-run >/dev/null"
+  },
+  "pi": {
+    "skills": [
+      "./agent-readiness",
+      "./agents-md",
+      "./create-cli",
+      "./git-commit"
+    ]
+  }
+}
