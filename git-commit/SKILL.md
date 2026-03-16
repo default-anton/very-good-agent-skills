@@ -23,6 +23,7 @@ description: >
 - Do NOT add sign-offs (no `Signed-off-by`).
 - Only commit; do NOT push (unless explicitly asked).
 - If caller provides file paths or globs, limit staging to those files unless explicitly told otherwise.
+- By default, do NOT run linters, formatters, tests, builds, or similar pre-commit checks unless the user explicitly asks for them or an `AGENTS.md` requires them.
 - If it is unclear whether a file belongs in the commit, ask.
 
 ## Steps
