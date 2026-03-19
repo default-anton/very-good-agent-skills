@@ -16,6 +16,13 @@ Write for an experienced principal engineer: setup done, real work starting.
 
 `AGENTS.md` is user-scoped operational memory, not agent-authored completeness. Start with the smallest useful instruction set. Expand only when the user asks or when a missing rule would clearly cause repeated repo-specific mistakes.
 
+## Hierarchy-aware scope
+
+- Root/global `AGENTS.md`: repo-wide invariants, routing cues, and cross-cutting verification only.
+- Subtree `AGENTS.md`: local conventions, workflow details, validation, and gotchas for that subtree.
+- If a closer `AGENTS.md` already owns a topic, do not duplicate it at root unless the user explicitly asks to promote it.
+- For root-level references to non-standard directories, default to a directory map: `path — purpose`.
+
 ## Modes
 
 - Patch: if asked to record or fix one thing, change only that.
@@ -36,8 +43,12 @@ Cover only what the requested scope needs. For comprehensive passes, make sure t
 
 - Write instructions, not explanations.
 - Keep it tight: token-light, high-signal, worth reading first.
+- When the user asks for "tight", "brief", "sparse", or "just reference it", default to `path — purpose` bullets or one-clause instructions.
+- Add extra clauses, examples, or commands only when they change execution, scope, or verification.
 - Prefer imperative bullets, exact paths, concrete commands, explicit decision rules.
 - Prefer task-based routing (`if touching X, read Y`) over sequential reading lists.
+- Match the file's compression level when it helps readability.
+- It is fine, and often preferable, to add sparser/terser guidance to a denser file when that better fits the requested scope and improves scanability.
 - Cut generic engineering advice, framework basics, temporary notes, duplicates.
 - State defaults, ask points, and no-touch zones.
 - Encode explicit user instructions and stable repo facts; do not turn one session into broad policy.
