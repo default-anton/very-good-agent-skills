@@ -42,7 +42,7 @@ Cover only what the requested scope needs. For comprehensive passes, make sure t
 ## Writing Rules
 
 - Write instructions, not explanations.
-- Keep it tight: token-light, high-signal, worth reading first.
+- Default to sparse: prefer short bullets over prose; include only what changes where the agent starts, what it avoids, and how it knows it is done.
 - When the user asks for "tight", "brief", "sparse", or "just reference it", default to `path — purpose` bullets or one-clause instructions.
 - Add extra clauses, examples, or commands only when they change execution, scope, or verification.
 - Prefer imperative bullets, exact paths, concrete commands, explicit decision rules.
