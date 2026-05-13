@@ -1,7 +1,7 @@
 {
   "name": "@default-anton/very-good-agent-skills",
   "version": "0.1.0",
-  "description": "Reusable pi skills for AGENTS.md authoring, CLI design, and git commits.",
+  "description": "Reusable pi skills for AGENTS.md authoring and CLI design.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -21,8 +21,7 @@
     "README.md",
     "LICENSE",
     "agents-md",
-    "create-cli",
-    "git-commit"
+    "create-cli"
   ],
   "scripts": {
     "check": "npm pack --dry-run >/dev/null"
@@ -30,8 +29,7 @@
   "pi": {
     "skills": [
       "./agents-md",
-      "./create-cli",
-      "./git-commit"
+      "./create-cli"
     ]
   }
 }
